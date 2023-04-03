@@ -1,10 +1,10 @@
 <template>
-    
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Login (Componente Vue)</div>
+                    <div class="card-header">Login</div>
                     <div class="card-body">
                         <form method="POST" action="" @submit.prevent="login($event)">
                             <input type="hidden" name="_token" :value="csrf_token">
@@ -42,7 +42,7 @@
                                         Login
                                     </button>
 
-                                
+
                                     <a class="btn btn-link" href="#">
                                         Esqueci a senha
                                     </a>
@@ -85,7 +85,7 @@
                             document.cookie = 'token='+data.token
                         }
                     })
-                
+
                 //dar sequência no envio do form de autenticação por sessão
                 e.target.submit()
             }
